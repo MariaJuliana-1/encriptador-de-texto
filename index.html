@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="https://www.alura.com.br/"> 
+        <img src="./assets/Logo.png" alt="Logo de Alura">
+        </a>
+    </header>
+    <main class="texto">
+        <section class="ingrese_el_texto">
+        <p> 
+            <textarea id="inputText" placeholder="Ingrese su texto aquí" rows="4" cols="50"></textarea>
+        </p>
+        <div>
+            <h6 class="Solo_letras">
+                <span class="zondicons--exclamation-solid"></span>Solo letras minúsculas y sin acentos
+            </h6>
+        </div>
+        <div class="botones">
+                <button onclick="usuarioEncripta();" class="boton_encriptacion">Encriptar</button>
+                <button onclick="usuarioDesencripta();" class="boton_desencriptacion">Desencriptar</button>
+        </div>
+        </section>
+        <section class="container">
+            <div class="mensajeInicial">
+                <img class="muñeco" src="./assets/Muñeco.png" alt="niño observando con lupa">
+                <p class="Ningún_mensaje">Ningún mensaje fue encontrado</p>
+                <p class="texto_que_desees_encriptar">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="mensajeEncriptado" style="display: none;">
+                <div id="output"></div>
+                <button onclick="copiar();" class="boton_copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Maria Juliana Moreno Peña</p>
+        <p>Contacto: <a href="mariajulianamorenop@gmail.com">mariajulianamorenop@gmail.com</a></p>
+        <p>© 2024 Todos los derechos reservados</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

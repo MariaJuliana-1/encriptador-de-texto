@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    background-color: #F3F5FC;
+    overflow-x: hidden; 
+}
+
+.header {
+    
+    background-color: #F3F5FC;
+    width: 100%;
+    padding: 10px 0; 
+}
+
+
+.logo {
+    margin-left: 10px;
+    width: 50px; 
+}
+
+
+
+
+
+main{
+    display: flex;
+    padding: 20px;
+    background-color: #F3F5FC;
+    padding-left: 240px;
+}
+
+.ingrese_el_texto {
+    border: none;
+    color: #0A3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+    
+    
+}
+
+.ingrese_el_texto_aqui {
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    color: #0A3871;
+    border: 0;
+    background-color: #F3F5FC;
+    vertical-align: top;
+    
+}
+
+::placeholder { color: #0A3871; }
+    .ingrese_el_texto:focus {
+        outline: none;
+        
+    }
+textarea::placeholder {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    color: #0A3871; 
+        
+}
+
+textarea {
+    background-color: transparent; 
+    border: none;
+    outline: none; 
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    height: 600px;
+    width: 100%;
+    color: #0A3871;
+    
+}
+
+.zondicons--exclamation-solid {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23000' d='M2.93 17.07A10 10 0 1 1 17.07 2.93A10 10 0 0 1 2.93 17.07M9 5v6h2V5zm0 8v2h2v-2z'/%3E%3C/svg%3E");
+    background-color: #495057;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+
+.Solo_letras {
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    color: #495057;
+}
+
+.texto {
+    
+    display: flex;
+    align-items: auto;
+    justify-content: space-between;
+    
+}
+
+.botones {
+    display: flex;
+    gap: 24px;
+    margin-top: 18px;
+}
+
+.boton_encriptacion {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.boton_desencriptacion {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    background: #FFFFFF; 
+    width: 90%; 
+    max-width: 400px; 
+    height: 944px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0; 
+    padding: 32px;
+}
+
+
+.Ningún_mensaje {
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.texto_que_desees_encriptar {
+    font-size: 16px;
+    font-family: "Inter", sans-serif
+}
+
+.mensajeEncriptado {
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    height: 100%; 
+    justify-content: space-between; 
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    color: #495057;
+    text-align: start;
+}
+
+.boton_copiar {
+    background: transparent;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    align-self: center; 
+    margin-top: 32px; 
+}
+
+
+.footer {
+    background-color: #0A3871; 
+    color: white; 
+    text-align: center; 
+    padding: 20px 0; 
+    font-family: "Inter", sans-serif; 
+    border-top: 3px solid #D8DFE8; 
+}
+
+.footer a {
+    color: #D8DFE8; 
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline; 
+}
+
+/* Media Query para Tablets */
+@media (max-width: 768px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .texto, .container {
+        width: 100%;
+        align-items: center;
+    }
+
+    .ingrese_el_texto_aqui, textarea {
+        width: 90%; 
+    }
+
+    .botones {
+        
+        align-items: center;
+        width: 100%;
+    }
+
+    .boton_encriptacion, .boton_desencriptacion {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .mensajeInicial, .mensajeEncriptado {
+        width: 90%; 
+        flex-direction: column;
+        align-items: center;
+        text-align:left;
+        
+    }
+
+    .muñeco {
+        display: none;
+    }
+
+    .container {
+        padding: 32px;
+        height: auto;
+        margin-top: 64px;
+        max-width: 688px;
+        
+    }
+    .mensajeInicial {
+        text-align: center;
+    }
+
+    .boton_copiar {
+        width: 624px;
+        
+    }
+}
+
+/* Media Query para Celulares */
+@media (max-width: 375px) {
+    .header {
+        padding: 15px 0;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .boton_encriptacion, .boton_desencriptacion {
+        width: 90%; 
+        margin: 10px auto;
+    }
+
+    .container {
+        padding: 32px;
+        height: auto;
+        margin-top: 64px;
+        word-wrap: break-word;
+        align-items: center;
+
+        
+    }
+    .mensajeInicial {
+        text-align: center;
+    }
+    
+
+    textarea {
+        height: 700px;
+    }
+
+    .muñeco {
+        display: none;
+    }
+
+    .boton_copiar {
+        width: 279px;
+        
+    }
+
+    .mensajeEncriptado {
+        font-size: 20px;
+    }
+
+}
